@@ -50,8 +50,8 @@ if 'hat' in house_items:
     print('found hat')
 print('\n2 items are there')
 ##checks that both are true, if then else only looks for the first true and then stops
-#tyring git to make a repo of my work so far
-print('testing git')
+#tyring git to make a repo of my work so far, hope it will work
+
 
 
 
