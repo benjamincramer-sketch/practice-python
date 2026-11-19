@@ -51,9 +51,32 @@ if 'hat' in house_items:
 print('\n2 items are there')
 ##checks that both are true, if then else only looks for the first true and then stops
 #tyring git to make a repo of my work so far, hope it will work
-print('______')
+empty_thing = [] #adding 'nothing' will make the first one print
+if 'nothing' in empty_thing:
+    for empty in empty_thing: # using for would be if we had multiple items and you wanted to print each one out below.  You can also do a if item = 'something' then print
+        print('nothing coming right up in' + empty_thing)
+else:
+    print('Its empty! Theres nothing')  ##it prints here because list is empty
 
+### This example was alluded to in teh above example.  it loops thorugh the list printing the true and hten goes to the else to print that
+trial_1 = ['trial1', 'trial2', 'trial3']
+for trials in trial_1:
+    if trials == 'trial2':
+        print ('We are just going to print: Trial1 and Trial3')
+    else:
+        print ('I guess we could print trial2')
+print('________________')
+######
+### ------------ Multiple Lists ----------###
+available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+#available could be a tuple as it wont change
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print('Adding ' +requested_topping + '.')
+    else:
+        print('SOrry, we dont have ' + requested_topping + '.')
 
-
+print('\nFinished making your pizza')
 
 # %%
