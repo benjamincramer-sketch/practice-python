@@ -55,9 +55,15 @@ user_0 = {
 for key, value in user_0.items(): #.items() is a method
     print('\nKey: ' + key)
     print('Value: ' + value)
-for k, v in categories_trial.items():
-    print('\nPerson: ' + k)
-    print('Fruit: ' + v)
+for name, fr in categories_trial.items():  # key, value >>can be anything, its temp varriable
+    print('\nPerson: ' + name)
+    print('Fruit: ' + fr)
+##### side thing again, messing with a logic check in a dict. 
+if user_0['username'] != 'crambj':
+    print('Invalid username') 
+else: print('You have the correct username')
+###
+
 
 
 
