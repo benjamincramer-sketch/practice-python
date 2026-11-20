@@ -25,11 +25,38 @@ for name in favorite_languages:
     if 'erin' not in favorite_languages:
         print('please take our poll') # using not
 for name in sorted(favorite_languages):
-    print(name.title())  #sorted list
+    print(name.title())  #sorted list, you sort the vairble in above line, not sort at print
 for name in favorite_languages.values(): # values() is a method, but not needed, its redundent
-    print(name.title()) #prints values out which is languages
-
-
+    print('this is the values = ' + name.title()) #prints values out which is languages
+#####
+favorite_languages = {}
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python'
+    }
+print('The following languages have been mentioned:')
+for language in set(favorite_languages.values()):
+    print(language.title()) ## Set() pulls out duplicates
+print("---------------------")
+###Nesting, lists in dict and dict in lists 
+alienz_0 = {}
+alienz_1 = {}
+alienz_2 = {}
+alienzs = [alienz_0, alienz_1, alienz_2]
+for alien in alienzs:
+    print(alien) #prints empty brackets, didnt add anything in them to save time
+## fleet of aliens
+alienzs = [] # ended up defining this as empty anyway to be added by the following code
+for alien_number in range(30): #makes 30 aliens, each with a key value
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    alienzs.append(new_alien)
+###
+for alien in alienzs[:5]:
+    print(alien)
+    print('Total number of aliens: ' + str(len(alienzs)) )
+#print(alienzs) shows how each alien is added into a list
 
 
 # %%
