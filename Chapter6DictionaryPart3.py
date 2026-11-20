@@ -42,5 +42,21 @@ for name, languages in favorite_languages.items(): # remember key, value so = na
     for language in languages:
         print('\t' + language.title())
 #pretty straigt forward, the above code prints key and then values for each key
-
+###Dictin a dict
+users = {
+    'crambj': {
+        'first': 'ben',
+        'last': 'cramer',
+        'location': 'fort',
+        },
+    'superman': {
+        'first': 'clark',
+        'last': 'kent',
+        'location': 'krypto',
+        },
+    }
+for username, user_info in users.items():
+    print(username.title())  #i could write code about full names combining first and last to a vairlab then printing, but i get the idea
+    location = user_info['location']
+    print(location.title())
 # %%
